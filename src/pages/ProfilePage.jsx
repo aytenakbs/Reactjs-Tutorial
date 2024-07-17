@@ -9,4 +9,4 @@ function ProfilePage() {
   </>
 }
 
-export default ProfilePages
+export default ProfilePage
