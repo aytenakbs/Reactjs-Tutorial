@@ -13,6 +13,8 @@ import ButtonSample from "./stateSamples/ButtonSample";
 import CityState from "./stateSamples/CityState";
 import ChangeColor from "./stateSamples/ChangeColor";
 import Suppliers from "./pages/Suppliers";
+import Users from "./pages/Users";
+import Todos from "./pages/Todos";
 
 function App() {
   
@@ -25,6 +27,8 @@ function App() {
          <Link to='/products'>Products</Link>
          <Link to='/profile'>Profile</Link>
          <Link to ='/suppliers'>Suppliers</Link>
+         <Link to ='/users'>Users</Link>
+         <Link to ='/todos'>Todos</Link>
        </ul>
        <Routes>
          <Route path="/" element={<HomePage />} />
@@ -34,6 +38,8 @@ function App() {
         <Route path="/profile" element={<ProfilePage/>} />
        <Route path="*" element={<NotFound />} />
        <Route path="/suppliers" element={<Suppliers />} />
+       <Route path="/users" element={<Users />} />
+       <Route path="/todos" element={<Todos />} />
       </Routes>
     </>
    );
